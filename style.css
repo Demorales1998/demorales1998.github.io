@@ -224,21 +224,21 @@ html,body
 
 .list-type1{
 	width:400px;
-	margin: 50px 300px;
+	margin: 50px 17%;
 	position:fixed; 
 	float:left;
 }
 
 .list-type2{
 	width:400px;
-	margin: 50px 850px;
+	margin: 50px 45%;
 	position:fixed; 
 	float:center;
 }
 
 .list-type3{
 	width:400px;
-	margin: 50px 1400px;
+	margin: 50px 72%;
 	position:fixed; 
 	float:right;
 }

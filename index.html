@@ -1,53 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset= "UTF-8">
-	<title>My website </title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-</head>
-<body id="grad1">
-	
-	<div class="icons">
-		<a href="https://www.facebook.com/andre.morais1998" class="facebook"><i class="fab fa-facebook-f"></i>facebook</a>
-		<a href="https://twitter.com/AndreMorais98" class="twitter"><i class="fab fa-twitter"></i>twitter</a>
-		<a href="https://github.com/Demorales1998" class="github"><i class="fab fa-github"></i>github</a>
-		<a href="https://www.linkedin.com/in/andr%C3%A9-morais-0814081b0/" class="linkedin"><i class="fab fa-linkedin-in"></i>linkedin</a>
-		<a href="mailto:andre_morais98@hotmail.com" class="email"><i class="far fa-envelope"></i>email</a>
-	</div>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/w3.css">
+<link rel="stylesheet" href="stylesheets/card.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-	<div id="mySidebar" class="sidebar">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  		<a href=""><i class="fa fa-fw fa-user"></i>About me</a>
-		<a href="qualifications.html"><i class="fa fa-book" aria-hidden="true"></i>    Qualifications</a>
-		<a href="interests.html"><i class="fa fa-film" aria-hidden="true"></i>    Interests</a>
-		<a href="playlist.html"><i class="fa fa-music" aria-hidden="true"></i>  Playlist</a>
-		
-	</div>
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
 
-	<div id="main">
- 		<button class="openbtn" onclick="openNav()">☰ </button>  
-	</div>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-color: #05524f;
+  min-height: 100%;
+}
 
-	<script>
-	function openNav() {
-  		document.getElementById("mySidebar").style.width = "250px";
-  		document.getElementById("main").style.marginLeft = "250px";
-	}
+.buttono {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
-	function closeNav() {
-  		document.getElementById("mySidebar").style.width = "0";
-  		document.getElementById("main").style.marginLeft= "0";
-	}
-	</script>
 
-	<div class="content">
-	<h1>Hi, my name is André Morais</h1>
-	<br>
-	<h3>and welcome to my website</h3>
-	</div>
+.w3-bar .w3-button {
+  padding: 16px;
+  
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->31
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="margin-bottom: -5px;">
+		  <img src="imagens/logo.png" alt="logo" width="40" height="40"/>
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="color:white">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT ME</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> PROJECTS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="margin-right: 25px;"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="resume.pdf" class="w3-bar-item buttono w3-border" style="margin-right: 25px;">RESUME</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Hi, My name is</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Hi, My name is André Morais</span><br>
+    <span class="w3-xlarge">I'm a Software Engineering Student</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About Me</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px;">
+    <a href="https://www.facebook.com/andre.morais1998/" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-facebook-official fa-7x w3-hover-opacity"></i>
+    </a>
+    <a href="https://github.com/Demorales1998" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-github fa-7x w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/andremorais1998/" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-linkedin fa-7x w3-hover-opacity"></i>
+    </a>
+  </div>
+</header>
+
+
+<!-- Team Section -->
+<div class="w3-container w3-purple" style="min-height: 100%; padding-top: 80px;" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left:10%">
+      <div class="w3-card">
+        <img src="imagens/andre.jpg" alt="andre" style="width:100%">
+        <div class="w3-container">
+          <h3>André Morais</h3>
+          <p class="w3-opacity">Software Engineering Student</p>
+          <p>Braga, 23 years old</p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">
+              <a href="mailto:andre_morais98@hotmail.com" style="text-decoration: none">
+                <i class="fa fa-envelope"></i> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m9" style="margin-left:15%">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4> Hello! I'm André Morais, a 23 years old student at the University of Minho, from the district of Braga. I am currently attending a masters degree on Network management and virtualization and Cryptography and Information Security.</h6>
+      <h4> During this years, I've always tried to enrich my academic path and my short term goals are to get an internship and learn AI in Python.</h6>
+      <h4> Regarding internships, I'm looking to learn more and earn experience with the job market. </h6>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container w3-yellow" style="padding:128px 16px" >
+  <h3 class="w3-center">Technical Skills</h3>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-xlarge">Programing Languages</p>
+      <p>Python, Bash, C, C++, Haskell, Java, Javascript</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-quote-right w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-xlarge">Markup Languages</p>
+      <p>LaTeX, Markdown, HTML</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-database w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-xlarge">DataBases</p>
+      <p>SQL (mysql), NoSQL (mongodb, Neo4j)</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-xlarge">Tools</p>
+      <p>Git, Advanced Linux knowledge, GNU core utils, Wireshark, SNMP, ExpressJS, React Native, Docker</p>
+    </div>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-purple w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Languages</h3>
+      <p>Portuguese: Native Language</p>
+      <p>English: got KET certificate</p>
+      <p>Spanish: got one year of intensive spanish</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide">Portuguese 🇵🇹</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide">English 🇬🇧</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide">Spanish 🇪🇸</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:50%">50%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Work Section -->
+<div class="w3-container w3-yellow" style="padding:128px 16px" id="projects">
+  <h3 class="w3-center">My Projects</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="card-container" style="margin-left:40%">
+    <div class="card u-clearfix">
+      <div class="card-body">
+        <span class="card-number card-circle subtle">01</span>
+        <span class="card-author subtle">Informatic Labs IV</span>
+        <h3 class="card-title">Portourgal</h3>
+        <span class="card-description subtle">Mobile application, which allows users to find which are the best restaurants, hotels and activities to do in each district, in Portugal.</span>
+        <a href="https://github.com/Demorales1998/3-ano/tree/main/2%C2%BAsemestre/LI4" style="text-decoration:none; font-size: 30px">
+          <i class="fa fa-github fa-7x w3-hover-opacity"></i>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="imagens/portourgal.jpg" style="width:50%; height:600px">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="imagens/portourgal2.jpg" style="width:50%; height:600px">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="imagens/portourgal3.jpg" style="width:50%; height:600px">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="imagens/portourgal4.jpg" style="width:50%; height:600px">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="imagens/portourgal5.jpg" style="width:50%; height:600px">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="margin-left: 70%;">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+      </div>
+    <div class="card-shadow"></div>
+  </div>
+
+  <div class="card-container" style="margin-right:40%">
+    <div class="card u-clearfix">
+      <div class="card-body">
+        <span class="card-number card-circle subtle">02</span>
+        <span class="card-author subtle">Web Application Development</span>
+        <h2 class="card-title">PGR</h2>
+        <span class="card-description subtle">Platform that provides educational resources of several types: books, articles, applications, students works, reports, etc.</span>
+        <a href="https://github.com/Demorales1998/4-ano/tree/main/1%C2%BAsemestre/DAW/Trabalho" style="text-decoration:none; font-size: 30px">
+          <i class="fa fa-github fa-7x w3-hover-opacity"></i>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="imagens/pgr.png" style="width:50%; height:300px">
+        </div>
+        
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="imagens/pgr2.png" style="width:50%; height:200px">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="margin-left: 70%;">
+          <span class="dot1" onclick="currentSlide1(1)"></span> 
+          <span class="dot1" onclick="currentSlide1(2)"></span> 
+        </div>
+
+    </div>
+    <div class="card-shadow"></div>
+  </div>
+
+  <div class="card-container" style="margin-left:40%">
+    <div class="card u-clearfix">
+      <div class="card-body">
+        <span class="card-number card-circle subtle">03</span>
+        <span class="card-author subtle">Software Engineering Labs</span>
+        <h2 class="card-title">Luxy</h2>
+        <span class="card-description subtle">Wallet Mobile App and a Web store to ensure the authenticity of luxurious objects with blockchain.</span>
+        <a href="https://github.com/Demorales1998/4-ano/tree/main/2%C2%BAsemestre/LEI" style="text-decoration:none; font-size: 30px">
+          <i class="fa fa-github fa-7x w3-hover-opacity"></i>
+      </div>
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="imagens/luxy1.png" style="width:50%; height:700px">
+        </div>
+        
+        <div class="mySlides2 fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="imagens/luxy3.png" style="width:50%; height:700px">
+        </div>
+        
+        <div class="mySlides2 fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="imagens/luxy4.png" style="width:50%; height:700px">
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="imagens/luxy5.png" style="width:50%; height:300px">
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="imagens/luxy6.png" style="width:50%; height:300px">
+        </div>
+        
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="margin-left: 70%;">
+          <span class="dot2" onclick="currentSlide2(1)"></span> 
+          <span class="dot2" onclick="currentSlide2(2)"></span> 
+          <span class="dot2" onclick="currentSlide2(3)"></span> 
+          <span class="dot2" onclick="currentSlide2(4)"></span> 
+          <span class="dot2" onclick="currentSlide2(5)"></span>
+        </div>
+
+    </div>
+    <div class="card-shadow"></div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/andre.morais1998/" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-facebook-official fa-7x w3-hover-opacity"></i>
+    </a>
+    <a href="https://github.com/Demorales1998" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-github fa-7x w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/andremorais1998/" style="text-decoration:none; font-size: 30px">
+      <i class="fa fa-linkedin fa-7x w3-hover-opacity"></i>
+    </a>
+  </div>
+  <p>© 2021 - Developed by André Morais</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+
+  var slideIndex1 = 1;
+  showSlides1(slideIndex1);
+  
+  function plusSlides1(n) {
+    showSlides1(slideIndex1 += n);
+  }
+  
+  function currentSlide1(n) {
+    showSlides1(slideIndex1 = n);
+  }
+  
+  function showSlides1(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    var dots = document.getElementsByClassName("dot1");
+    if (n > slides.length) {slideIndex1 = 1}    
+    if (n < 1) {slideIndex1 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex1-1].style.display = "block";  
+    dots[slideIndex1-1].className += " active";
+  }
+
+
+  
+  var slideIndex2 = 1;
+  showSlides2(slideIndex2);
+  
+  function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+  }
+  
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+  
+  function showSlides2(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides2");
+    var dots = document.getElementsByClassName("dot2");
+    if (n > slides.length) {slideIndex2 = 1}    
+    if (n < 1) {slideIndex2 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+  }
+
+  </script>
+  
 
 </body>
 </html>
